@@ -2,4 +2,4 @@
 Java (Maven) application for tracking time on the job
 
 Time tracker
-V1.0
+V1.1

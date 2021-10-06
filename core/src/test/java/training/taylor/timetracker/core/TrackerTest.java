@@ -46,7 +46,8 @@ public class TrackerTest {
     public void testRemove() {
         assertNotNull(tracker);
         int initialSize = tracker.size();
-        tracker.remove(0);
+        TimeEntry entry = tracker.get(0);
+        tracker.remove(entry);
         assertEquals("tracker.size()", initialSize-1, tracker.size());
     }    
 }

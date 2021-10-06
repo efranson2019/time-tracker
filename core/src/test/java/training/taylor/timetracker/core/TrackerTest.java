@@ -24,7 +24,11 @@ public class TrackerTest {
     @Test
     public void testMe() {
         assertNotNull(tracker);
-        log.info("tracker.size()=" + tracker.size());
+        int count = tracker.size();
+        log.info("tracker.size()=" + count);
+        for (int i=0; i < count; ++i) {
+            log.info(tracker.get(i).toString());
+        }        
     }
 
     @Test
@@ -34,9 +38,7 @@ public class TrackerTest {
         entry.setRate(80.0f);
         entry.setTime(3);
         int initialSize = tracker.size();
-        log.info("tracker.size()=" + tracker.size());
         tracker.add(entry); 
         assertEquals("tracker.size()", initialSize+1, tracker.size());
-        log.info("tracker.size()=" + tracker.size());
     }
 }

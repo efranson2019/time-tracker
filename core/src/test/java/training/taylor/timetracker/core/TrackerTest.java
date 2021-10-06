@@ -23,19 +23,20 @@ public class TrackerTest {
 
     @Test
     public void testMe() {
-        log.info("testMe()**");
         assertNotNull(tracker);
+        log.info("tracker.size()=" + tracker.size().toString());
     }
 
     @Test
-    public void testAdd() {
-        log.info("testAdd()**");
+    public void testAdd() {        
         TimeEntry entry = new TimeEntry();
         entry.setDescription("Entry Test");
         entry.setRate(80.0f);
         entry.setTime(3);
         int initialSize = tracker.size();
+        log.info("tracker.size()=" + tracker.size().toString());
         tracker.add(entry); 
-        assertEquals("tracker.size()", initialSize+1, tracker.size());        
+        assertEquals("tracker.size()", initialSize+1, tracker.size());
+        log.info("tracker.size()=" + tracker.size().toString());
     }
 }

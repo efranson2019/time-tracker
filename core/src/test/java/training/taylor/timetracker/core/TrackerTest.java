@@ -41,4 +41,12 @@ public class TrackerTest {
         tracker.add(entry); 
         assertEquals("tracker.size()", initialSize+1, tracker.size());
     }
+    
+    @Test
+    public void testRemove() {
+        assertNotNull(tracker);
+        int initialSize = tracker.size();
+        tracker.remove(0);
+        assertEquals("tracker.size()", initialSize-1, tracker.size());
+    }    
 }

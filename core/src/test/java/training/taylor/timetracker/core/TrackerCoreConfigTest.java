@@ -24,6 +24,11 @@ public class TrackerCoreConfigTest {
     @Test
     public void testMe() {
         assertNotNull(entries);
+        int count = entries.size();
+        log.info("entries.size()=" + count);
+        for (int i=0; i < count; ++i) {
+            log.info(entries.get(i).toString());
+        }           
     }
 
 }

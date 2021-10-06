@@ -29,7 +29,8 @@ public class TrackerTest {
         entry.setDescription("Entry Test");
         entry.setRate(80.0f);
         entry.setTime(3);
-        tracker.add(entry);
-        assertEquals(tracker.size(), 0);        
+        int initialSize = tracker.size();
+        tracker.add(entry); 
+        assertEquals("tracker.size()", initialSize+1, tracker.size());        
     }
 }

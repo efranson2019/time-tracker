@@ -16,8 +16,8 @@
     This is a very simple example web page on a JSP.  Changes deployed via Jenkins.
   </p>
   <div>
-<% Tracker tracker = new Tracker(); %>
-  <div>tracker.size()=<% tracker.size(); %></div>
+  <% Tracker tracker = new Tracker(); %>
+  <div>tracker.size()=<%= tracker.size(); %></div>
   </div>
 </body>
 </html>

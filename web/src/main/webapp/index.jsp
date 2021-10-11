@@ -5,6 +5,7 @@
   Time: 8:47 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ import training.taylor.timetracker.core %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -16,9 +17,8 @@
     This is a very simple example web page on a JSP.  Changes deployed via Jenkins.
   </p>
   <div>
-<% for (int i=1; i<4; i++) { %>
-    <div>i=<%= i %>.</div>
-<% } %>
+<% Tracker tracker = new Tracker(); %>
+  <div>tracker.size()=<% tracker.size(); %></div>
   </div>
 </body>
 </html>

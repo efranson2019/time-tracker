@@ -15,9 +15,10 @@
   <p>
     This is a very simple example web page on a JSP.  Changes deployed via Jenkins.
   </p>
-  <div>
   <% String s1 = "Hello!"; %>
+  <div>
   <div><%= s1 %></div>
+  <div>Length: <%= s1.length() %></div>
   </div>
 </body>
 </html>

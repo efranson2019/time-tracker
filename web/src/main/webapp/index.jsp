@@ -16,7 +16,7 @@
     This is a very simple example web page on a JSP.  Changes deployed via Jenkins.
   </p>
   <div>
-  <% string s1 = "Hello!"; %>
+  <% String s1 = "Hello!"; %>
   <div><%= s1 %></div>
   </div>
 </body>

@@ -5,8 +5,7 @@
   Time: 8:47 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ import training.taylor.timetracker.core %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="training.taylor.timetracker.core" %>
 <html>
 <head>
     <title>Very Simple Example Webpage</title>

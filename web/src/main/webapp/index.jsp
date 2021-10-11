@@ -17,7 +17,7 @@
   </p>
   <div>
   <% Tracker tracker = new Tracker(); %>
-  <div>tracker.size()=<%= tracker.size(); %></div>
+  <div>tracker.size()=<%= tracker.size() %></div>
   </div>
 </body>
 </html>

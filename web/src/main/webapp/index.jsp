@@ -15,5 +15,10 @@
   <p>
     This is a very simple example web page on a JSP.  Changes deployed via Jenkins.
   </p>
+  <div>
+<% for (int i=1; i<4; i++) { %>
+    <div>i=<%= i %>.</div>
+<% } %>
+  </div>
 </body>
 </html>
